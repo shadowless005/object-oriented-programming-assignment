@@ -4,7 +4,7 @@ class Student:
     def __init__(self, name, email, grades):
         self.name = name
         self.email = email
-        self.grade = grades
+        self.grades = grades
 
     def add_grade(self, grade):
         self.grade.append(grade)
@@ -13,17 +13,17 @@ class Student:
     def average_grade(self):
         if len(self.grade) == 0:
             return 0
-        return sum(self.grade) / len(self.grade)  
+        return sum(self.grades) / len(self.grades)  
     
     def display_info(self):
         print(f"Name: {self.name}")
         print(f"Email: {self.email}")
-        print(f"Grades: {self.grade}")
+        print(f"Grades: {self.grades}")
         print(f"Average Grade: {self.average_grade():.2f}")
         print("-" * 40)
 
     def grades_tuple(self):
-        return tuple(self.grade)    
+        return tuple(self.grades)    
 
     
     
@@ -142,7 +142,7 @@ print()
 
 count = 0 
 for student in students:
-    for grade in student.grades:
+    for grade in student.grade:
         if grade > 90:
             count += 1
 print("Number of grades above 90:", count)
