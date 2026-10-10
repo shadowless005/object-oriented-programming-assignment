@@ -142,9 +142,9 @@ print()
 
 count = 0 
 for student in students:
-    for grade in student.grade:
+    for grade in student.grades:
         if grade > 90:
-            count =+ 1
+            count += 1
 print("Number of grades above 90:", count)
 
 
