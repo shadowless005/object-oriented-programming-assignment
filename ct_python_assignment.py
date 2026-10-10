@@ -7,11 +7,11 @@ class Student:
         self.grades = grades
 
     def add_grade(self, grade):
-        self.grade.append(grade)
+        self.grades.append(grade)
     
 
     def average_grade(self):
-        if len(self.grade) == 0:
+        if len(self.grades) == 0:
             return 0
         return sum(self.grades) / len(self.grades)  
     
