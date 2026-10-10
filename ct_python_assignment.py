@@ -97,7 +97,7 @@ else:
 unique_grades = set()
 
 for student in students:
-    unique_grades.update(student.grade)
+    unique_grades.update(student.grades)
 print("==== Unique Grades =====")
 print(unique_grades)
 print() 
@@ -120,14 +120,14 @@ print()
 print("===== List Operations =====")
 
 for student in students:
-    student.grade.pop()
+    student.grades.pop()
 
     print(student.name)
 
-    print("First Grade:", student.grade[0])
-    print("Last Grade:", student.grade[-1])
+    print("First Grade:", student.grades[0])
+    print("Last Grade:", student.grades[-1])
 
-    print("Number of Grades:", len(student.grade))
+    print("Number of Grades:", len(student.grades))
     print()
 
 
@@ -142,7 +142,7 @@ print()
 
 count = 0 
 for student in students:
-    for grade in student.grade:
+    for grade in student.grades:
         if grade > 90:
             count += 1
 print("Number of grades above 90:", count)
